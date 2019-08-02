@@ -1,0 +1,24 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+  showdiff: false
+  workdir: ~/.config/dotdrop
+dotfiles:
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_tmux.conf:
+    dst: ~/.tmux.conf
+    src: tmux.conf
+profiles:
+  bmoussadComp:
+    dotfiles:
+    - f_bashrc
+    - f_tmux.conf
